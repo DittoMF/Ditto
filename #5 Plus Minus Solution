@@ -1,0 +1,32 @@
+import math
+import os
+import random
+import re
+import sys
+
+def plusMinus(arr):
+#Solution:
+
+    positive_count = 0
+    negative_count = 0
+    zero_count = 0
+    
+    for num in arr:
+        if num > 0:
+            positive_count += 1
+        elif num < 0:
+            negative_count += 1
+        elif num == 0:
+            zero_count += 1
+        else:                   #optional
+            pass
+    print(positive_count/n)
+    print(negative_count/n)
+    print(zero_count/n)
+        
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    arr = list(map(int, input().rstrip().split()))
+
+    plusMinus(arr)
