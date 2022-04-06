@@ -1,0 +1,24 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+def miniMaxSum(arr):
+#Solution:
+    
+    arr.sort()
+    
+    result = sum(arr)
+    
+    min_result = result - arr[len(arr)-1]
+    max_result = result - arr[0]
+    print(min_result,max_result)
+        
+if __name__ == '__main__':
+
+    arr = list(map(int, input().rstrip().split()))
+
+    miniMaxSum(arr)
